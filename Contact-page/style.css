@@ -1,0 +1,236 @@
+/** @format */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.header {
+	display: bold;
+	display: block;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	padding: 0px 130px;
+	position: fixed;
+	align-items: center;
+	background-color: #3f6251;
+	justify-content: space-between;
+}
+.header .logos-2 {
+	display: none;
+}
+.header .navbar {
+	gap: 30px;
+	display: flex;
+}
+.header .navbar .linklar a {
+	margin-left: 30px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 125%;
+	text-align: right;
+	color: #ffffff;
+	text-decoration: none;
+	letter-spacing: 0.7px;
+	transition: 0.2s linear;
+}
+.header .navbar .linklar a:hover {
+	color: rgb(255, 0, 0);
+}
+.header .navbar .linklar a:active {
+	scale: 0.5;
+}
+.header .bars {
+	cursor: pointer;
+	display: none;
+	position: relative;
+	top: 5px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#section-1 {
+	height: auto;
+	display: flex;
+	padding: 0px 130px;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+}
+
+#section-1 .text-box {
+	margin-top: 150px;
+	gap: 16px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+#section-1 .text-box h2 {
+	font-family: "Crimson Text";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 125%;
+	text-align: center;
+	color: #000000;
+	width: 462px;
+}
+#section-1 .text-box .lorem-p {
+	width: 411px;
+	height: 60px;
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 155%;
+	text-align: center;
+	color: #000000;
+}
+#section-1 .grid-box {
+	margin-bottom: 70px;
+	margin-top: 50px;
+	display: flex;
+	gap: 60px;
+}
+#section-1 .grid-box .left-box {
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+}
+#section-1 .grid-box .left-box h3 {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 125%;
+	color: #000000;
+}
+#section-1 .grid-box .left-box .small-input {
+	padding-left: 30px;
+	margin-bottom: 15px;
+	width: 575px;
+	height: 38px;
+	background: #eeeeee;
+	border: 1px solid #000000;
+	border-radius: 5px;
+}
+
+#section-1 .grid-box .left-box .big-input {
+	width: 575px;
+	padding-left: 30px;
+	height: 75px;
+	background: #eeeeee;
+	border: 1px solid #000000;
+	border-radius: 5px;
+}
+
+#section-1 .grid-box .left-box .btn {
+	margin-top: 10px;
+	padding: 13px;
+	border: none;
+	border-radius: 5px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 125%;
+	text-align: center;
+	cursor: pointer;
+	color: #ffffff;
+	background-color: #000000;
+	transition: 0.3s linear;
+}
+
+#section-1 .grid-box .left-box .btn:hover {
+	background-color: transparent;
+	border: 1px solid #000000;
+	color: #000000;
+}
+
+#section-1 .grid-box .img-box {
+	display: none;
+}
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 60px 130px;
+	background-color: #3f6251;
+}
+footer .icons {
+	gap: 25px;
+	display: flex;
+	align-items: center;
+}
+footer .footer-date {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 125%;
+	text-align: right;
+	color: #ffffff;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 992px) {
+	.header {
+		padding: 0px 56px !important;
+	}
+	.header .logos-1 {
+		display: none;
+	}
+	.header .logos-2 {
+		display: block !important;
+	}
+	.header .linklar {
+		display: none;
+	}
+	.header .bars {
+		display: block !important;
+	}
+}
+@media (max-width: 576px) {
+	.header {
+		padding: 0px 26px !important;
+	}
+	#section-1 {
+		padding: 0px 20px 30px !important;
+	}
+
+	#section-1 .text-box h2 {
+		font-size: 39px !important;
+	}
+	#section-1 .text-box .lorem-p {
+		height: 85px !important;
+		width: 315px !important;
+	}
+	#section-1 .grid-box {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	#section-1 .grid-box .img-box {
+		display: block;
+	}
+
+	#section-1 .grid-box .right-box {
+		display: none !important;
+	}
+	#section-1 .grid-box .left-box .small-input {
+		width: 335px;
+		height: 38px;
+	}
+
+	#section-1 .grid-box .left-box .big-input {
+		width: 335px;
+		height: 141px;
+	}
+	footer {
+		gap: 20px;
+		flex-direction: column;
+		padding: 30px 24px !important;
+	}
+}

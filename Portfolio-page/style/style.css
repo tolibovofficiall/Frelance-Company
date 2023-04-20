@@ -1,0 +1,218 @@
+/** @format */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.header {
+	display: bold;
+	display: block;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	padding: 0px 130px;
+	position: fixed;
+	align-items: center;
+	background-color: #3f6251;
+	justify-content: space-between;
+}
+.header .logos-2 {
+	display: none;
+}
+.header .navbar {
+	gap: 30px;
+	display: flex;
+}
+.header .navbar .linklar a {
+	margin-left: 30px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 125%;
+	text-align: right;
+	color: #ffffff;
+	text-decoration: none;
+	letter-spacing: 0.7px;
+	transition: 0.2s linear;
+}
+.header .navbar .linklar a:hover {
+	color: rgb(255, 0, 0);
+}
+.header .navbar .linklar a:active {
+	scale: 0.5;
+}
+.header .bars {
+	cursor: pointer;
+	display: none;
+	position: relative;
+	top: 5px;
+}
+
+/* ////////////////////// ////////////////////////////////////////////////////////||||/////////////////////////////////////////////////*/
+
+#section-1 {
+	height: auto;
+	display: flex;
+	padding: 40px 130px;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+}
+
+#section-1 .text-box {
+	margin-top: 150px;
+	gap: 16px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+#section-1 .text-box .partners-p {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 17px;
+	line-height: 125%;
+	text-align: center;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: #74c69d;
+}
+#section-1 .text-box h2 {
+	font-family: "Crimson Text";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 125%;
+	text-align: center;
+	color: #000000;
+	width: 462px;
+}
+#section-1 .text-box .lorem-p {
+	width: 411px;
+	height: 60px;
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 155%;
+	text-align: center;
+	color: #000000;
+}
+#section-1 .grid-box {
+	margin-top: 70px;
+	gap: 40px;
+	height: auto;
+	width: 94%;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+#section-1 .grid-box .media-img {
+	display: none;
+}
+
+#section-1 .black-btn {
+	margin-top: 50px;
+	color: white;
+	padding: 13px 34px;
+	border-radius: 5px;
+	border: none;
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 125%;
+	text-align: center;
+	color: #ffffff;
+	cursor: pointer;
+	transition: 0.3s linear all;
+	background-color: #212529;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#section-1 .black-btn:hover {
+	color: #212529;
+	border: 1px solid #212529;
+	background-color: white;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#section-1 .black-btn:active {
+	color: white;
+	background-color: #212529;
+	scale: 0.9;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 60px 130px;
+	background-color: #3f6251;
+}
+footer .icons {
+	gap: 25px;
+	display: flex;
+	align-items: center;
+}
+footer .footer-date {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 125%;
+	text-align: right;
+	color: #ffffff;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 992px) {
+	.header {
+		padding: 0px 56px !important;
+	}
+	.header .logos-1 {
+		display: none;
+	}
+	.header .logos-2 {
+		display: block !important;
+	}
+	.header .linklar {
+		display: none;
+	}
+	.header .bars {
+		display: block !important;
+	}
+}
+@media (max-width: 576px) {
+	.header {
+		padding: 0px 26px !important;
+	}
+	#section-1 {
+		padding: 0px 20px 30px !important;
+	}
+
+	#section-1 .text-box h2 {
+		font-size: 39px !important;
+	}
+	#section-1 .text-box .lorem-p {
+		height: 85px !important;
+		width: 315px !important;
+	}
+	#section-1 .grid-box {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.grid-box .imges {
+		display: none;
+	}
+	.grid-box .media-img {
+		display: block !important;
+	}
+
+	footer {
+		gap: 20px;
+		flex-direction: column;
+		padding: 30px 24px !important;
+	}
+}

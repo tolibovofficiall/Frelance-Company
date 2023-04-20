@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 130px;
+    background-color: #3f6251;
+
+    .icons {
+        gap: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-date {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 125%;
+        text-align: right;
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,53 @@
+.header {
+    z-index: 10;
+    display: bold;
+    display: block;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 0px 130px;
+    position: fixed;
+    align-items: center;
+    background-color: #3f6251;
+    justify-content: space-between;
+
+    .logos-2 {
+        display: none;
+    }
+
+    .navbar {
+        gap: 30px;
+        display: flex;
+
+        .linklar {
+
+            a {
+                margin-left: 30px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 125%;
+                text-align: right;
+                color: #FFFFFF;
+                text-decoration: none;
+                letter-spacing: 0.7px;
+                transition: .2s linear;
+
+                &:hover {
+                    color: rgb(255, 0, 0);
+                }
+
+                &:active {
+                    scale: 0.50;
+                }
+            }
+        }
+    }
+
+
+    .bars {
+        cursor: pointer;
+        display: none;
+        position: relative;
+        top: 5px;
+    }
+}

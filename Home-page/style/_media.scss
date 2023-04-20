@@ -1,0 +1,131 @@
+@media (max-width: 992px) {
+    .header {
+        padding: 0px 56px !important;
+
+        .logos-1 {
+            display: none;
+        }
+
+        .logos-2 {
+            display: block !important;
+        }
+
+        .linklar {
+            display: none;
+        }
+
+        .bars {
+            display: block !important;
+        }
+    }
+
+    #section-1 {
+        padding: 0px 50px !important;
+
+        .main-box {
+            .right-box {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 0px 26px !important;
+    }
+
+    #section-1 {
+        padding: 0px 20px !important;
+
+        .main-box {
+            display: grid;
+            place-items: center;
+
+            .left-box {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 100% !important;
+                height: 100% !important;
+
+                h1 {
+                    font-size: 28px !important;
+                }
+
+                .lorem-p {
+                    margin-bottom: 30px;
+                    width: 340px !important;
+                    height: 95px !important;
+                }
+
+
+                img {
+                    display: block !important;
+                }
+            }
+        }
+    }
+
+    #section-2 {
+        padding: 50px 20px !important;
+
+        .text-box {
+
+            h2 {
+                font-size: 25px !important;
+            }
+
+            .lorem-p {
+                height: 85px !important;
+                width: 335px !important;
+            }
+        }
+
+        .company-icons {
+            flex-direction: column;
+        }
+
+        .info-box-1 {
+            gap: 70px;
+            flex-direction: column !important;
+
+            .info {
+                align-items: start !important;
+
+                h2 {
+                    width: 334px !important;
+                    height: 60px !important;
+                    font-size: 24px !important;
+                }
+
+                .text {
+                    width: 344px !important;
+                    height: 95px !important;
+                }
+            }
+
+            .img-1 {
+                display: none !important;
+            }
+
+            .media-img {
+                display: block !important;
+            }
+        }
+
+        .user-box {
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+
+
+
+    footer {
+        gap: 20px;
+        flex-direction: column;
+        padding: 30px 24px !important;
+    }
+}
